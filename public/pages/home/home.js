@@ -2,6 +2,8 @@ import { register } from "/src/entities/user/api";
 import { User } from "/src/entities/user/model";
 import { MyInput } from "/src/shared/ui/MyInput";
 
+const app = document.querySelector("#app")
+
 
 export function init() {  
   const user = new User("Ulajon", "1234", "email.@gmail.com", "cowboy", "Ulugbek Abdukarimov")
@@ -11,6 +13,8 @@ export function init() {
 
   const userNameInput = MyInput("username", "text", "Username", "/icons/Vector.svg");
 
-  document.body.appendChild(userNameInput);
+
+
+  app.appendChild(userNameInput);
 }
 
